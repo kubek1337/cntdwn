@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+body {
+  background-color: rgb(201, 200, 194);
+}
+
+p {
+  color: black;
+  font-family: "Space Mono", monospace;
+  font-size: 10em;
+  text-align: center;
+  margin-top: 18%;
+}
+
+a {
+  color: black;
+  font-family: "Space Mono", monospace;
+  text-decoration: none;
+}
+
+.buttons {
+  font-family: "Space Mono", monospace;
+  text-align: center;
+}

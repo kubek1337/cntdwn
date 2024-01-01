@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferie</title>
+  <meta name="description" content="Ferie">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../png.png" type="image/x-icon">
+  <script>
+    var countDownDate = new Date("Feb 12, 2024 00:00:00").getTime();
+
+    var x = setInterval(function () {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var seconds = Math.floor(distance / 1000); // Obliczanie tylko w sekundach
+
+      document.getElementById("count").innerHTML = seconds;
+
+      if (distance < 0) {
+        clearInterval(x); document.getElementById("count").innerHTML = "0";
+      }
+    }, 1000); </script>
+</head>
+
+<body>
+  <p id="count"></p>
+  <div class="buttons">
+    <a href="../2025/index.html">2025</a> |
+    <a href="../summer/index.html">Wakacje</a> |
+    <a href="../index.html">Vultures</a>
+  </div>
+
+</body>
+
+</html>
